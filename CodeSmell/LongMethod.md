@@ -1,4 +1,4 @@
-# Método largo
+# Método largo (Long Method)
 
 ## Signos y síntomas
 
@@ -18,10 +18,12 @@ Como regla general, si sientes la necesidad de comentar algo dentro de un métod
 
 ![](https://refactoring.guru/images/refactoring/content/smells/long-method-02.png?id=274350a92b305ae79848ab40b3bdb0cb)
 
-* Para reducir la longitud del cuerpo de un método, utilica [Extracción de metodo](https://refactoring.guru/es/extract-method) .
-* Si las variables y los parámetros locales interfieren con la extracción de un método, use [Reemplazar temporal con consulta](https://refactoring.guru/es/replace-temp-with-query) , [Introducir objeto de parámetro](https://refactoring.guru/es/introduce-parameter-object) o [Conservar todo el objeto](https://refactoring.guru/es/preserve-whole-object) .
-* Si ninguna de las recetas anteriores ayuda, intente mover todo el método a un objeto separado a través de [Reemplazar método con objeto de método](https://refactoring.guru/es/replace-method-with-method-object) .
-* Los operadores condicionales y los bucles son una buena pista de que el código se puede mover a un método separado. Para condicionales, utilice [Descomponer condicional](https://refactoring.guru/es/decompose-conditional) . Si hay bucles en el camino, pruebe [el método de extracción](https://refactoring.guru/es/extract-method) .
+> OJO SUSTITUYE LOS ENLACES A LAS DISTITNAS TRADUCCIONES QUE VAS HACIENOD. NO DEJES ENLACES A REFACTORING.GURU
+
+* Para reducir la longitud del cuerpo de un método, utiliza [Extracción de método](./RefactoringPattern/ExtractMethod.md).
+* Si las variables y los parámetros locales interfieren con la extracción de un método, usa [Reemplazar temporal con consulta](https://refactoring.guru/es/replace-temp-with-query) , [Introducir objeto de parámetro](https://refactoring.guru/es/introduce-parameter-object) o [Conservar todo el objeto](https://refactoring.guru/es/preserve-whole-object) .
+* Si ninguna de las recetas anteriores ayuda, intenta mover todo el método a un objeto separado a través de [Reemplazar método con objeto de método](https://refactoring.guru/es/replace-method-with-method-object) .
+* Los operadores condicionales y los bucles son una buena pista de que el código se puede mover a un método separado. Para condicionales, utiliza [Descomponer condicional](https://refactoring.guru/es/decompose-conditional) . Si hay bucles en el camino, prueba [Extracción de método](./RefactoringPattern/ExtractMethod.md).
 
 ## Beneficios
 
@@ -34,4 +36,4 @@ Como regla general, si sientes la necesidad de comentar algo dentro de un métod
 
 ¿Un aumento en la cantidad de métodos perjudica el rendimiento, como afirman muchas personas? En casi todos los casos, el impacto es tan insignificante que ni siquiera vale la pena preocuparse.
 
-Además, ahora que tiene un código claro y comprensible, es más probable que encuentre métodos realmente efectivos para reestructurar el código y obtener ganancias de rendimiento reales si surge la necesidad.
+Además, ahora que tienes un código claro y comprensible, es más probable que encuentres métodos realmente efectivos para reestructurar el código y obtener ganancias de rendimiento reales si surge la necesidad.
