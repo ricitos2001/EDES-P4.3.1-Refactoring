@@ -1,17 +1,18 @@
-# Método largo (Long Method)
 # Cirugía de escopeta (Shotgun Surgery)
 
-Shotgun Surgery resembles Divergent Change but is actually the opposite smell. [Divergent Change](https://refactoring.guru/es/smells/divergent-change) is when many changes are made to a single class. Shotgun Surgery refers to when a single change is made to multiple classes simultaneously.
+La cirugía de escopeta se parece al [cambio divergente](https://refactoring.guru/es/smells/divergent-change) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
 
 ## Signos y síntomas
 
-Making any modifications requires that you make many small changes to many different classes.
+Hacer cualquier modificación requiere que hagas cualquier pequeño cambio a muchas clases distintas.
 
 ![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-01.png?id=9cc1117a6d787364788e152a3adb6a53)
 
 ## Razones del problema
 
-A single responsibility has been split up among a large number of classes. This can happen after overzealous application of [Divergent Change](https://refactoring.guru/es/smells/divergent-change).
+Una sola responsabilidad se ha dividido entre un gran número[cambio divergente](https://refactoring.guru/es/smells/divergent-change).
+
+A single responsibility has been split up among a large number of classes. This can happen after overzealous application of [cambio divergente](https://refactoring.guru/es/smells/divergent-change).
 
 ![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-02.png?id=48f8a4a0f17d112e02ae73bacaed43fa)
 
