@@ -27,7 +27,7 @@ fun discount(inputVal : Int, quantity : Int) {
 
 ## Por qué refactorizar
 
-Las razones para esta refactorización son las mismas que para "***Split temporary variable***", pero tratándose de un parámetro, no una variable local.
+Las razones para esta refactorización son las mismas que para ["***Split temporary variable***"](/RefactoringPattern/SplitTemporaryVariable.md), pero tratándose de un parámetro, no una variable local.
 
 Si un parámetro se pasa por referencia, luego de cambiar el valor del parámetro dentro del método, este valor se pasa al argumento que solicitó llamar a este método. Muy a menudo esto ocurre accidentalmente y conduce a efectos desafortunados. Incluso si los parámetros generalmente se pasan por valor (y no por referencia) en su lenguaje de programación, esta peculiaridad de codificación puede alejar a aquellos que no están acostumbrados a ella.
 
