@@ -8,7 +8,7 @@ Un campo se usa más en otra clase que en su propia clase.
 
 ## Solución
 
-Crea un campo en una nueva clase para redirigir a todos los usuarios del viejo campo al nuevo. Create a field in a new class and redirect all users of the old field to it.
+Crea un campo en una nueva clase para redirigir a todos los usuarios del viejo campo al nuevo.
 ![](https://refactoring.guru/images/refactoring/diagrams/Move%20Field%20-%20After.png?id=d7c21af94ec9df17575373bae745e96e)
 
 ## Por qué refactorizar
