@@ -16,7 +16,7 @@ Una sola responsabilidad se ha dividido entre un gran número de clases. Esto pu
 
 ## Tratamiento
 
-* Usa el [método de movimiento](https://refactoring.guru/es/move-method) y el [movimiento de campo](https://refactoring.guru/es/move-field) para mover comportamientos existentes de una clase a una sola clase, Si no hay una clase apropiada para esto, crea una nueva.
+* Usa el [método de movimiento](https://refactoring.guru/es/move-method) y el [movimiento de campo](/./RefactoringPattern/MoveField.md) para mover comportamientos existentes de una clase a una sola clase, Si no hay una clase apropiada para esto, crea una nueva.
 
 * Si mover código a la misma clase deja las clases originales casi vacía, intenta encargarte de estas clases ahora redundantes mediante la [clase alineada](https://refactoring.guru/es/inline-class).
 
