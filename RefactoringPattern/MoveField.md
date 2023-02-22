@@ -8,22 +8,25 @@ Un campo se usa más en otra clase que en su propia clase.
 
 ## Solución
 
-Crea un campo en una nueva clase para redirigir a todos los usuarios del viejo campo Create a field in a new class and redirect all users of the old field to it.Crea un nuevo campo en la clase que usa más este método, entonces move el código del nuevo método a aquí. Convierte el código del método original en una referencia al nuevo método en la otra clase o bórralo completamente
-
+Crea un campo en una nueva clase para redirigir a todos los usuarios del viejo campo al nuevo.
 ![](https://refactoring.guru/images/refactoring/diagrams/Move%20Field%20-%20After.png?id=d7c21af94ec9df17575373bae745e96e)
 
 ## Por qué refactorizar
 
-1. Quieres mover un método a una clase que contiene la mayoría de los datos usados por ese método. Esto hace a las clases más coherentes internamente.
-2. Quiere mover un método para reducir o eliminar la dependencia de la clase llamando al método en la clase en la que está localizado. Esto puede ser útil si la llamda a la clase ya es dependiente de la clase a la que estás planeando mover el método. Esto reduce la dependencia entre clases.
+A menudo los campos se mueven como parte de la [Extracción de clases](https://refactoring.guru/es/extract-class). Decidir a que clase dejar el campo puede ser dificil. Aquí está nuestra regla: **pon un campo en el mismo lugar que los métodos que lo usan**(o donde más de estos métodos haya).
+
+Esta regla te ayudará en otros casos cuando un campo está simplemente localizado en el lugar incorrecto.
 
 ## Como refactorizar
 
-1. Verifica todas las característica usadas usadas por el viejo método. Ouede ser una buena idea moverlas también. Como regla, si una característica se usa solo para el método bajo consideración, deberías mover la característica al mismo. Si la característica se usa en otros métodos también, deberías mover esos métodos también. A veces es más facil mover un gran número de métods que establecer relaciones entre ellos en diferentes clases.
+1. Si el campo es público, refactorizar será mucho más fácil si haces lo campos privados y le das métodos de acceso públicos(para hacer esto, puedes usar[Campo encapsulado](https://refactoring.guru/es/encapsulate-field)).
 
-   Asegúrate de que el método no se ha declarado en superclases y subclases. Si este es el caso, deberías evitar moverlo o en su defecto, aplicar algún tipo de polimorfismo en la clase destinataria para asergurar la funcionalidad variable de un método dividido entre claseses donantes.
-2. Declara un nuevo método en la clase destinataria. Debes darle un nuevo nombre al método para que sea más apropiado para su nueva clase.
-3. Decide cómo te referirás a la destinataria. Debes tener un campo o método que devuelve un objeto apropiado, pero si no, necesitarás escribir un nuevo método o campo para almacenar el objeto de la clase destinataria.
+2. Crear el mismo campo con métodos de acceso en la clase destinataria.
 
-   Ahora deberías tener una forma de referirte al objeto destinatario y un nuevo método en su clase. Con todo eso hecho, puedes convertir el viejo método en una referencia al nuevo método.
-4. Observa: ¿puedes borrar el viejo método completamente? Si la respuesta es sí, crea una referencia al nuevo método en todos los lugares donde se haya usado el antiguo.
+3. Decide como te referirás a la clase destinataria. Puede que ya tengas un campo o método que devuelve el objeto apropiado; si no, tendrás que escribir un nuevo método o campo que almacene el objeto de la clase destinataria.
+
+4. Reemplaza todas las referencias al viejo campo con las llamadas apropiadas a métodos en la clase destinataria. Si el campo no es privado, encárgate de que este se encuentre en las superclases y las subclases.
+
+5. Borra el campo en la clase original.
+
+
