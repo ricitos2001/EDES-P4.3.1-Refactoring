@@ -1,4 +1,4 @@
-# Remove Assignments to Parameters
+# Eliminar asignación a parámetros (Remove Assignments to Parameters)
 
 ## Problema
 
