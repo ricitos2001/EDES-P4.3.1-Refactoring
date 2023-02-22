@@ -20,6 +20,7 @@ fun foundPerson(people: Array<String>): String? {
 }
 ```
 ## Solución
+Reemplace el cuerpo del método que implementa el algoritmo con un nuevo algoritmo.
 ```kotlin
 fun foundPerson(people: Array<String?>): String? {
     val candidates: List<*> = Arrays.asList(*arrayOf("Don", "John", "Kent"))
