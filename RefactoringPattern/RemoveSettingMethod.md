@@ -2,14 +2,11 @@
 
 ## Problema
 
-El valor de un campo debe establecerse solo cuando se crea, no en ningún momento después de eso.
+El valor de un campo debe establecerse solo cuando se crea, no en ningún momento después de eso. En el caso de kotlin el lenguaje ya nos crea los metodos getter y setter por lo tanto no es necesario crear un método.
 
 ```Kotlin
 class Cliente() {
   var ID: Int = 0
-  fun setId(id: Int) {
-    ID = id
-  }
 }
 ```
 
