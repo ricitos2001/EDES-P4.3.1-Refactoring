@@ -1,33 +1,28 @@
-# Cambio divergente (Divergent Change)
+# Cambio Divergente (Divergent Change)
 
-La cirugía de escopeta se parece a la [cirugía de escopeta](https://refactoring.guru/es/smells/divergent-change) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
+La cirugía de escopeta se parece a la [cirugía de escopeta](./CodeSmell/ShotgunSurgery.md) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
 
 ## Signos y síntomas
 
-Hacer cualquier modificación requiere que hagas cualquier pequeño cambio a muchas clases distintas.
+Si te ves teniendo que cambiar muchos metodos que no están relacionados entre sí cuando haces cambios a una clase. Por ejemplo, cuando añades un tipo de producto tienes que cambiar los métodos para encontrar, enseñar y ordenar productos.
 
-![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-01.png?id=9cc1117a6d787364788e152a3adb6a53)
+![](https://refactoring.guru/images/refactoring/content/smells/divergent-change-01.png?id=d62e68e1778d67bf82ff74064c24de33)
 
 ## Razones del problema
 
-Una sola responsabilidad se ha dividido entre un gran número de clases. Esto puede pasar después de una aplicación demasiado intensiva del [cambio divergente](https://refactoring.guru/es/smells/divergent-change).
-
-![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-02.png?id=48f8a4a0f17d112e02ae73bacaed43fa)
-
+A menudo esas modificaciones divergentes se deben a una estructura pobre del programa o a "programación por copypaste".
 ## Tratamiento
 
-* Usa el [método de movimiento](https://refactoring.guru/es/move-method) y el [movimiento de campo](https://refactoring.guru/es/move-field) para mover comportamientos existentes de una clase a una sola clase, Si no hay una clase apropiada para esto, crea una nueva.
+* Divide el comportamiento de la clase mediante la [extracción de clase](https://refactoring.guru/es/extract-class).
 
-* Si mover código a la misma clase deja las clases originales casi vacía, intenta encargarte de estas clases ahora redundantes mediante la [clase alineada](https://refactoring.guru/es/inline-class).
+* Si diferentes clases tienen el mismo comportamiento, puede que debas combinar las clases mediante herencia([extracción de superclase](https://refactoring.guru/es/extract-superclass) y [extraccion de subclase](https://refactoring.guru/es/extract-subclass))
 
-![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-03.png?id=cf013f14eb5cde98bd48595a1c9836a9)
+![](https://refactoring.guru/images/refactoring/content/smells/divergent-change-02.png?id=21b6fd7cba36f123c09497cb8f5a5625)
 
 ## Beneficios
 
-* Mejor organización.
+* Mejora la organización del código.
 
-* Menos codigo duplicado.
+* Reduce el código duplicado.
 
-* Mantenimuento más fácil.
-
-![](https://refactoring.guru/images/refactoring/content/smells/long-method-03.png?id=82ce2d388aa14bdae4e8f62b875f0259)
+* Simplifica el mantenimiento.
