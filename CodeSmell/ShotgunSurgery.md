@@ -10,26 +10,24 @@ Hacer cualquier modificación requiere que hagas cualquier pequeño cambio a muc
 
 ## Razones del problema
 
-Una sola responsabilidad se ha dividido entre un gran número[cambio divergente](https://refactoring.guru/es/smells/divergent-change).
-
-A single responsibility has been split up among a large number of classes. This can happen after overzealous application of [cambio divergente](https://refactoring.guru/es/smells/divergent-change).
+Una sola responsabilidad se ha dividido entre un gran número de clases. Esto puede pasar después de una aplicación demasiado intensiva del [cambio divergente](https://refactoring.guru/es/smells/divergent-change).
 
 ![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-02.png?id=48f8a4a0f17d112e02ae73bacaed43fa)
 
-## Tratamientoç
+## Tratamiento
 
-* Use [Move Method](https://refactoring.guru/es/move-method) and [Move Field](https://refactoring.guru/es/move-field) to move existing class behaviors into a single class. If there’s no class appropriate for this, create a new one.
+* Usa el [método de movimiento](https://refactoring.guru/es/move-method) y el [movimiento de campo](https://refactoring.guru/es/move-field) para mover comportamientos existentes de una clase a una sola clase, Si no hay una clase apropiada para esto, crea una nueva.
 
-* If moving code to the same class leaves the original classes almost empty, try to get rid of these now-redundant classes via [Inline Class](https://refactoring.guru/es/inline-class).
+* Si mover código a la misma clase deja las clases originales casi vacía, intenta encargarte de estas clases ahora redundantes mediante la [clase alineada](https://refactoring.guru/es/inline-class).
 
 ![](https://refactoring.guru/images/refactoring/content/smells/shotgun-surgery-03.png?id=cf013f14eb5cde98bd48595a1c9836a9)
 
 ## Beneficios
 
-* Better organization.
+* Mejor organización.
 
-* Less code duplication.
+* Menos codigo duplicado.
 
-* Easier maintenance.
+* Mantenimuento más fácil.
 
 ![](https://refactoring.guru/images/refactoring/content/smells/long-method-03.png?id=82ce2d388aa14bdae4e8f62b875f0259)
