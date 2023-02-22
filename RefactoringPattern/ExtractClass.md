@@ -23,7 +23,7 @@ Las clases deben ser claras y fáciles de leer, ocupándose de una única funci�
 
 ## Inconvenientes
 
-* Si te excedes, tendrás que recurrir al método "Inline Class" de refactorización.
+* Si te excedes, tendrás que recurrir al método ["***Inline Class***"](/RefactoringPattern/InlineClass.md) de refactorización.
 
 ## Cómo refactorizar
 
@@ -31,6 +31,6 @@ Antes de comenzar, decide cómo quieres dividir exactamente las responsabilidade
 
 1. Crea una nueva clase para contener la funcionalidad relevante.
 2. Crea una relación entre la clase antigua y la nueva, siendo preferentemente unidireccional de forma que se pueda reutilizar la segunda clase sin problema. Si fuera necesario, se puede configurar para que sea bidireccional.
-3. Utiliza "***Move field***" y "***Move method***" para cada campo y método que decidas mover a la nueva clase. Comienza con los métodos privados para reducir el riesgo de cometer una gran cantidad de errores. Trata de reubicarlo poco a poco y prueba los resultados después de cada movimiento, para evitar una acumulación de corrección de errores al final.
+3. Utiliza ["***Move field***"](/RefactoringPattern/MoveField.md) y ["***Move method***"](/RefactoringPattern/MoveMethod.md) para cada campo y método que decidas mover a la nueva clase. Comienza con los métodos privados para reducir el riesgo de cometer una gran cantidad de errores. Trata de reubicarlo poco a poco y prueba los resultados después de cada movimiento, para evitar una acumulación de corrección de errores al final.
    Una vez terminado, revisa por si debe renombrarse la antigua clase para mayor claridad y revisa una vez más por si puede deshacerse las relaciones bidireccionales en caso de haberlas.
 4. Piensa también en la accesibilidad de la nueva clase. Puede ocultarla del cliente haciéndola privada a través de los campos de la clase anterior o puede hacerla pública al permitir que el cliente cambie los valores directamente. Su decisión aquí depende de qué tan seguro sea para el comportamiento de la clase anterior cuando se realizan cambios directos inesperados en los valores de la nueva clase.
