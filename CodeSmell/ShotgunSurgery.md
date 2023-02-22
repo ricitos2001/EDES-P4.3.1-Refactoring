@@ -1,6 +1,6 @@
 # Cirugía de escopeta (Shotgun Surgery)
 
-La cirugía de escopeta se parece al [cambio divergente](https://refactoring.guru/es/smells/divergent-change) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
+La cirugía de escopeta se parece al [cambio divergente](DivergentChange.md) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
 
 ## Signos y síntomas
 

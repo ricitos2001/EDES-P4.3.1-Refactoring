@@ -1,6 +1,6 @@
 # Cambio Divergente (Divergent Change)
 
-El cambio divergente se parece a la [cirugía de escopeta](./CodeSmell/ShotgunSurgery.md) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
+El cambio divergente se parece a la [cirugía de escopeta](ShotgunSurgery.md) pero en realidad es lo contrario. Cambio divergente es cuando se hacen muchos cambios a una sola clase. Cirugía de escopeta se refiere a cuando se realiza un solo cambio en varias clases a la vez.
 
 ## Signos y síntomas
 
