@@ -42,8 +42,4 @@ Sin embargo, si extrae partes de esta expresión en variables, siempre se llamar
 ## Cómo refactorizar
 1. Inserte una nueva línea antes de la expresión relevante y declare una nueva variable allí. Asigne parte de la expresión compleja a esta variable.
 2. Reemplace esa parte de la expresión con la nueva variable.
-<<<<<<< HEAD
 3. Repita el proceso para todas las partes complejas de la expresión.
-=======
-3. Repita el proceso para todas las partes complejas de la expresión. 
->>>>>>> 28-refactoring-composing-method-extract-variable
