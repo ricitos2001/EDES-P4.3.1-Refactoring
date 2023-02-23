@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d54e61d0-830d-4614-9279-afe0c31997b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeSmell.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeSmell/LongMethod.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDES-P4.3.1-Refactoring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RefactoringPattern.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RefactoringPattern/ExtractMethod.md" afterDir="false" />
-    </list>
+    <list default="true" id="d54e61d0-830d-4614-9279-afe0c31997b2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/usuariom/Desktop/EDES-P4.3.1-Refactoring",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -56,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676622460351</updated>
       <workItem from="1676622463284" duration="3529000" />
+      <workItem from="1677049574057" duration="49000" />
     </task>
     <servers />
   </component>
