@@ -1,18 +1,53 @@
-#Eliminar intermediario
+# Eliminar intermediario
 
-##Problema
+## Problema
 
 Una clase tiene demasiados métodos que simplemente delegan a otros objetos.
 
-##Solución
+## Solución
 
 Elimine estos métodos y obligue al cliente a llamar directamente a los métodos finales.
 
 Quitar intermediario - Antes
 
+```Kotlin
+interface Cliente{
+    // Codigo de la Interfaz 
+}
+open class Departamento{
+    fun getManager(){
+        //Codigo de la funcion 
+    }
+}
+class Persona : Cliente{
+    fun getManager(){
+        var departamento = Departamento()
+        departamento.getManager()
+    }
+
+```
+
 Quitar intermediario - Después
 
-##Por qué refactorizar
+``` kotlin 
+
+interface Cliente{
+    //Codigo de la Interfaz 
+}
+
+open class Departamento : Cliente{
+    fun getManager(){
+        //Codigo de la clase 
+    }
+}
+class Persona : Cliente{
+    fun getDepartamento(){
+        //Codigo de la clase
+    }
+}
+```
+
+## Por qué refactorizar
 
 Para describir esta técnica, usaremos los términos de Hide Delegate , que son:
 
@@ -26,7 +61,7 @@ Hay dos tipos de problemas:
 
 - Cada vez que se agrega una nueva función al delegado , debe crear un método de delegación para ello en la clase de servidor . Si se realizan muchos cambios, esto será bastante tedioso.
 
-##Cómo refactorizar
+## Cómo refactorizar
 
 Cree un captador para acceder al objeto de clase delegado desde el objeto de clase de servidor .
 
