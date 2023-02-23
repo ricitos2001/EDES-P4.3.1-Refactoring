@@ -1,4 +1,4 @@
-# Algoritmo de sustitución
+# Agregar Parametro (Add Parameter)
 
 ## Problema
 * Un método no tiene suficientes datos para realizar ciertas acciones.
