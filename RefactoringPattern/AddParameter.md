@@ -2,10 +2,12 @@
 
 ## Problema
 * Un método no tiene suficientes datos para realizar ciertas acciones.
+
 ![](https://refactoring.guru/images/refactoring/diagrams/Add%20Parameter%20-%20Before.png)
 
 ## Solución
 * Cree un nuevo parámetro para pasar los datos necesarios.
+
 ![](https://refactoring.guru/images/refactoring/diagrams/Add%20Parameter%20-%20After.png)
 
 ## Por qué refactorizar
