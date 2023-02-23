@@ -2,6 +2,8 @@
 
 Las data class, como su nombre indica, son clases que solo contiene datos que otras clases usarán y no contienen ninguna funcionalidad y no pueden gestionar por si mismo sus propios datos.
 
+![imagen1](https://refactoring.guru/images/refactoring/content/smells/data-class-01.png?id=2ea1583b05a194a056d27ac559545318)
+
 ## ¿Por qué son un problema?
 
 Algunos consideran un problema las data class porque consideran que las clases deberían de gestionar sus propios datos y tener más funcionalidad más allá de solo guardar datos.
@@ -11,5 +13,7 @@ Cabe comentar que no todas las personas consideran las data class como una mala 
 ## ¿Cómo solucionarlo?
 
 Si consideras que las data class son algo que hay que exterminar, asegurate de que la funcionalidad relevante para los datos se implementa en métodos de la clase, y que los datos se almacenan en la clase más apropiada para ello.
+
+![imagen2](https://refactoring.guru/images/refactoring/content/smells/data-class-02.png?id=db0eb15f9f229bafd8423b2cfd09f910)
 
 También puedes usar técnicas de refactorización como [Encapsulate Collection](https://refactoring.guru/es/encapsulate-collection) para que guardes los datos en colecciones,[Encapsulate Field](https://refactoring.guru/es/encapsulate-field) para evitar el acceso directo a los datos,[Move Method](https://refactoring.guru/es/move-method) y [Extract Method](https://refactoring.guru/es/extract-method) para añadir métodos que van mejor en la data class que en el sitio donde estén, [Hide Method](https://refactoring.guru/es/hide-method) y [Remove Setting Method](https://refactoring.guru/es/remove-setting-method) para eliminar métodos que dan un acceso demasiado amplio a una data class.
