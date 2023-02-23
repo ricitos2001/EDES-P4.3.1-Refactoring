@@ -2,7 +2,7 @@
 
 ## Signos y síntomas
 
-Un método tiene que contener una cantidad significativa de comentarios que expliquen correctamente su funcionamiento
+Un método tiene que contener una cantidad significativa de comentarios que expliquen correctamente su funcionamiento.
 
 ![](https://refactoring.guru/images/refactoring/content/smells/comments-01.png?id=584958123f3b902e0ad0895d879509b9)
 
