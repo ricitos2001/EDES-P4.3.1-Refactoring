@@ -22,7 +22,7 @@ para dividir el método en varias partes que se pueden colocar en diferentes lug
 
 ![](https://refactoring.guru/images/refactoring/content/smells/feature-envy-02.png)
 
-## Saldar
+## Beneficios
 - Menos duplicación de código (si el código de manejo de datos se coloca en un lugar central).
 
 - Mejor organización del código (los métodos para manejar los datos están al lado de los datos reales).
