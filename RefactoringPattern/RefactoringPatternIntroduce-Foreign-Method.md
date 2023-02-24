@@ -49,7 +49,7 @@ Esto es mejor que la duplicación incluso considerando que el método extraño s
 ## Inconvenientes
 Las razones para tener el método de una clase de utilidad en una clase de cliente no siempre serán claras para la persona que mantiene el código
 después de usted. Si el método se puede usar en otras clases, podría beneficiarse creando un contenedor para la clase de utilidad y colocando el 
-método allí. Esto también es beneficioso cuando existen varios métodos de utilidad de este tipo. Introducir Extensión Local puede ayudar con esto.
+método allí. Esto también es beneficioso cuando existen varios métodos de utilidad de este tipo. [Introducir Extensión Local](https://github.com/IES-Rafael-Alberti/EDES-P4.3.1-Refactoring/blob/main/RefactoringPattern/IntroduceLocalExtension.md) puede ayudar con esto.
 
 ## Cómo refactorizar
 
