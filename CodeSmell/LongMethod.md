@@ -20,10 +20,10 @@ Como regla general, si sientes la necesidad de comentar algo dentro de un métod
 
 > OJO SUSTITUYE LOS ENLACES A LAS DISTITNAS TRADUCCIONES QUE VAS HACIENOD. NO DEJES ENLACES A REFACTORING.GURU
 
-* Para reducir la longitud del cuerpo de un método, utiliza [Extracción de método](./RefactoringPattern/ExtractMethod.md).
-* Si las variables y los parámetros locales interfieren con la extracción de un método, usa [Reemplazar temporal con consulta](https://refactoring.guru/es/replace-temp-with-query) , [Introducir objeto de parámetro](https://refactoring.guru/es/introduce-parameter-object) o [Conservar todo el objeto](https://refactoring.guru/es/preserve-whole-object) .
-* Si ninguna de las recetas anteriores ayuda, intenta mover todo el método a un objeto separado a través de [Reemplazar método con objeto de método](https://refactoring.guru/es/replace-method-with-method-object) .
-* Los operadores condicionales y los bucles son una buena pista de que el código se puede mover a un método separado. Para condicionales, utiliza [Descomponer condicional](https://refactoring.guru/es/decompose-conditional) . Si hay bucles en el camino, prueba [Extracción de método](./RefactoringPattern/ExtractMethod.md).
+* Para reducir la longitud del cuerpo de un método, utiliza [Extracción de método](../RefactoringPattern/ExtractMethod.md).
+* Si las variables y los parámetros locales interfieren con la extracción de un método, usa [Reemplazar temporal con consulta](../RefactoringPattern/ReplaceTempwithQuery.md) , [Introducir objeto de parámetro](../RefactoringPattern/IntroduceParameterObject.md) o [Conservar todo el objeto](../RefactoringPattern/PreserveWholeObject.md) .
+* Si ninguna de las recetas anteriores ayuda, intenta mover todo el método a un objeto separado a través de [Reemplazar método con objeto de método](../RefactoringPattern/ReplaceMethodWithMethodObject.md) .
+* Los operadores condicionales y los bucles son una buena pista de que el código se puede mover a un método separado. Para condicionales, utiliza [Descomponer condicional](../RefactoringPattern/DecomposeConditional.md) . Si hay bucles en el camino, prueba [Extracción de método](../RefactoringPattern/ExtractMethod.md).
 
 ## Beneficios
 

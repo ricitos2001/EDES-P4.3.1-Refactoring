@@ -1,0 +1,116 @@
+Index: CodeSmell/MiddleMan.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CodeSmell/MiddleMan.md b/CodeSmell/MiddleMan.md
+new file mode 100644
+--- /dev/null	(date 1677175460743)
++++ b/CodeSmell/MiddleMan.md	(date 1677175460743)
+@@ -0,0 +1,32 @@
++# Intermediarios (Middle Man)
++
++## Síntomas y signos
++
++Si una clase realiza solo una acción, delegando el trabajo a otra clase, entonces ¿Por qué existe?
++
++![](https://refactoring.guru/images/refactoring/content/smells/middle-man-01.png?id=14c65845c4e0cf03e7e9e48108090c98![img.png](img.png))
++
++## Razones del problema
++
++Este Code Smell puede ser el resultado de la eliminación excesiva de las cadenas de mensajes.
++
++En otros casos, puede ser el resultado del trabajo útil de una clase que se mueve gradualmente a otras clases.
++La clase permanece como una cáscara vacía que no hace otra cosa que delegar.
++
++## Tratamiento
++
++Si la mayoría de las clases de un método delegan a otra clase, Quitar intermediario está entre ellos.
++
++![](https://refactoring.guru/images/refactoring/content/smells/middle-man-02.png?id=f507c0fd9a7bde8df8c22b9027d0a404)
++
++## Recompensa
++
++El código se vuelve menos voluminoso.
++
++## Cuando ignorar
++
++No elimine los intermediarios que se hayan creado por estos motivos:
++
++Si se ha agregado un intermediario para evitar dependencias entre clases.
++
++Algunos patrones de diseño crean intermediarios a propósito (como Proxy o Decorator).
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d54e61d0-830d-4614-9279-afe0c31997b2\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/CodeSmell/LazyClass.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LrHoof6dSHCR1xUU8qfqAQ0Ymo\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"abbreviatePackageNames\" value=\"true\" />\r\n    <option name=\"autoscrollFromSource\" value=\"true\" />\r\n    <option name=\"flattenPackages\" value=\"true\" />\r\n    <option name=\"foldersAlwaysOnTop\" value=\"false\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showExcludedFiles\" value=\"false\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showModules\" value=\"false\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n    <option name=\"sortByType\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d54e61d0-830d-4614-9279-afe0c31997b2\" name=\"Changes\" comment=\"\" />\r\n      <created>1676622460351</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1676622460351</updated>\r\n      <workItem from=\"1676622463284\" duration=\"3529000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2c0ad18ffb11d11c79214f5e40b5d1c8ea5daa72)
++++ b/.idea/workspace.xml	(date 1677175460843)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="d54e61d0-830d-4614-9279-afe0c31997b2" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/CodeSmell/LazyClass.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/CodeSmell/MiddleMan.md" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -36,14 +36,20 @@
+     <option name="showVisibilityIcons" value="true" />
+     <option name="sortByType" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+-  }
+-}</component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "C:/Users/sabor/IdeaProjects/EDES-P4.3.1-Refactoring/CodeSmell",
++    "nodejs_package_manager_path": "npm"
++  }
++}]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\sabor\IdeaProjects\EDES-P4.3.1-Refactoring\CodeSmell" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -54,6 +60,14 @@
+       <updated>1676622460351</updated>
+       <workItem from="1676622463284" duration="3529000" />
+     </task>
++    <task id="LOCAL-00001" summary="lazy class">
++      <created>1677174932466</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1677174932466</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -70,4 +84,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="lazy class" />
++    <option name="LAST_COMMIT_MESSAGE" value="lazy class" />
++  </component>
+ </project>
+\ No newline at end of file
