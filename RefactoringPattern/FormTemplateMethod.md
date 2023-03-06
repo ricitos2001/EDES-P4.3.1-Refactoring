@@ -28,3 +28,4 @@ Las subclases se desarrollan en paralelo, a veces por diferentes personas, lo qu
 3. A los métodos que no son similares se les pueden dar nombres consistentes a través de Rename Method.
 4. Mueve las firmas de métodos no similares a una superclase como abstractas utilizando el método Pull Up. Deja sus implementaciones en las subclases.
 5. Y finalmente, extrae el método principal del algoritmo a la superclase. Ahora debería funcionar con los pasos del método descritos en la superclase, tanto reales como abstractos.
+
