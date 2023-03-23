@@ -4,15 +4,11 @@
 
 Una clase tiene características que se utilizan solo en ciertos casos.
 
-Extraer Subclase - Antes
-
 ![](https://refactoring.guru/images/refactoring/diagrams/Extract%20Subclass%20-%20Before.png)
 
 ## Solución
 
 Crear una subclase y utilizarla en estos casos.
-
-Extraer Subclase - Después
 
 ![](https://refactoring.guru/images/refactoring/diagrams/Extract%20Subclass%20-%20After.png)
 
