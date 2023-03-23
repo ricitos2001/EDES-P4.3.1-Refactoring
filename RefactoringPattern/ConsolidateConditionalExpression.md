@@ -52,9 +52,9 @@ Antes de refactorizar, asegúrate de que los condicionales no tengan ningún "ef
 
 1. Consolida los condicionales en una sola expresión usando and y or. Como regla general al consolidar:
 
-    Los condicionales anidados se unen usando and.
+    - Los condicionales anidados se unen usando and.
 
-    Los condicionales consecutivos se unen con or.
+    - Los condicionales consecutivos se unen con or.
 
 2. Realiza [Extract Method](../RefactoringPattern/ExtractMethod.md) en las condiciones del operador y da un nombre al método que refleje el propósito de la expresión
 
