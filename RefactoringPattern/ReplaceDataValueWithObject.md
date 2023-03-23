@@ -4,17 +4,13 @@
 
 Una clase (o grupo de clases) contiene un campo de datos. El campo tiene su propio comportamiento y datos asociados.
 
+![](https://refactoring.guru/images/refactoring/diagrams/Replace%20Data%20Value%20with%20Object%20-%20Before.png)
+
+
  ## Solución
 
 Crear una nueva clase, colocar el antiguo campo y su comportamiento en la clase, y almacenar el objeto de la clase en la 
 clase original.
-
-Reemplazar valor de datos por objeto - Antes
-
-![](https://refactoring.guru/images/refactoring/diagrams/Replace%20Data%20Value%20with%20Object%20-%20Before.png)
-
-Reemplazar valor de datos por objeto - Después
-q
 
 ![](https://refactoring.guru/images/refactoring/diagrams/Replace%20Data%20Value%20with%20Object%20-%20After.png)
 

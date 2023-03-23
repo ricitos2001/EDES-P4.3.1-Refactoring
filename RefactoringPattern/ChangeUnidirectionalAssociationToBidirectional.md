@@ -5,15 +5,11 @@
 Tienes dos clases que necesitan utilizar las características de la otra, pero la asociación entre ellas es solo 
 unidireccional.
 
-Cambiar Asociación Unidireccional a Bidireccional - Antes
-
 ![](https://refactoring.guru/images/refactoring/diagrams/Change%20Unidirectional%20Association%20to%20Bidirectional%20-%20Before.png)
 
 ## Solución
 
 Añadir la asociación que falta a la clase que la necesita.
-
-Cambiar Asociación Unidireccional a Bidireccional - Después
 
 ![](https://refactoring.guru/images/refactoring/diagrams/Change%20Unidirectional%20Association%20to%20Bidirectional%20-%20After.png)
 
