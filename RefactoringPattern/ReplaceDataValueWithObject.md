@@ -10,9 +10,12 @@ Crear una nueva clase, colocar el antiguo campo y su comportamiento en la clase,
 clase original.
 
 Reemplazar valor de datos por objeto - Antes
+
 ![](https://refactoring.guru/images/refactoring/diagrams/Replace%20Data%20Value%20with%20Object%20-%20Before.png)
 
 Reemplazar valor de datos por objeto - Después
+q
+
 ![](https://refactoring.guru/images/refactoring/diagrams/Replace%20Data%20Value%20with%20Object%20-%20After.png)
 
 ## Por qué refactorizar
