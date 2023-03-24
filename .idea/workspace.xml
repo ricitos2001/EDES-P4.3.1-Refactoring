@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1834ecb0-9778-4c2a-b113-f49212c1f60c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RefactoringPattern/ReplaceDelegationwithInheritance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RefactoringPattern/ExtractSuperclass.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RefactoringPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1676622463284" duration="3529000" />
       <workItem from="1677049574057" duration="49000" />
       <workItem from="1678100880774" duration="2976000" />
-      <workItem from="1679642555974" duration="4777000" />
+      <workItem from="1679642555974" duration="6389000" />
     </task>
     <servers />
   </component>
