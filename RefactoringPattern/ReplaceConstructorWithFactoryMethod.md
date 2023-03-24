@@ -30,7 +30,7 @@ return empleado;
 
 ## Por qué Refactorizar
 
-La razón más obvia para usar esta técnica de refactorización está relacionada con la técnica [Reemplazar Código de Tipo con Subclases](../RefactoringPattern/Replace_Type_Code_with_Class.md).
+La razón más obvia para usar esta técnica de refactorización está relacionada con la técnica [Reemplazar Código de Tipo con Subclases](../RefactoringPattern/ReplaceTypeCodeWithClass.md).
 
 Tienes código en el que se crea un objeto y se le pasa el valor del tipo codificado. Después de usar el método de refactorización, han aparecido varias subclases y de ellas necesitas crear objetos dependiendo del valor del tipo codificado. Cambiar el constructor original para que devuelva objetos de subclase es imposible, por lo que en su lugar se crea un método de fábrica estático que devolverá objetos de las clases necesarias, después de lo cual reemplaza todas las llamadas al constructor original.
 
