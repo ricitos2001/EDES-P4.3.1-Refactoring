@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="344e1bf3-359c-4094-91a8-30528336b7a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RefactoringPattern/ReplaceTypeCodeWithStateStrategy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodeSmell.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSmell.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSmell/Alternative Classes with different interfaces.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSmell/AlternativeClassesWithDifferentInterfaces.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSmell/Alternative_Classes_with_different_interfaces.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RefactoringPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RefactoringPattern/Pull-Up-Constructor-Body.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern/PullUpConstructorBody.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RefactoringPattern/ReplaceConstructorWithFactoryMethod.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern/ReplaceConstructorWithFactoryMethod.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RefactoringPattern/Replace_Type_Code_with_Class.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern/ReplaceTypeCodeWithClass.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RefactoringPattern/ntroduce-Foreign-Method.md" beforeDir="false" afterPath="$PROJECT_DIR$/RefactoringPattern/IntroduceForeignMethod.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
