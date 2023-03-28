@@ -5,21 +5,21 @@
 Llamar a un método de consulta y pasar sus resultados como parámetros a otro método, mientras que ese método podría 
 llamar directamente a la consulta.
 
-``
+```
 int precioBase = cantidad * precioArticulo;
 double descuentoEstacional = this.obtenerDescuentoEstacional();
 double cuotas = this.obtenerCuotas();
 double precioFinal = precioDescontado(precioBase, descuentoEstacional, cuotas);
-``
+```
 
 ## Solución
 
 En lugar de pasar el valor a través de un parámetro, intente colocar una llamada de consulta dentro del cuerpo del método.
 
-``
+```
 int precioBase = cantidad * precioArticulo;
 double precioFinal = precioDescontado(precioBase);
-``
+```
 
 ## Por qué refactorizar
 
