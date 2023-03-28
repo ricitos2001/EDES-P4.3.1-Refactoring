@@ -65,7 +65,7 @@ implementaciones del método refuel().
 
 ## Refactorings Similares
 
-[Extraer Clase](ExtractClass)
+[Extraer Clase](ExtractClass.md)
 
 ## Eliminar Olor
 
