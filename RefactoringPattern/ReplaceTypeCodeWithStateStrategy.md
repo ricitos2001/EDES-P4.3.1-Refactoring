@@ -75,7 +75,7 @@ al método de fábrica de estado para obtener nuevos objetos de estado.
 las técnicas de [Empujar Campo Hacia abajo](PushDownField.md) y [Empujar Metodo Hacia Abajo](PushDownMethod.md)).
 
 7. Cuando todo lo que se pueda mover haya sido movido, utiliza 
-[Reemplazar Condicional con Polymorphism](ReplaceConiditionalWithPolymorphism.md) para deshacerte de las condiciones que 
+[Reemplazar Condicional con Polymorphism](ReplaceConditionalWithPolymorphism.md) para deshacerte de las condiciones que 
 usan el código de tipo de una vez por todas.
 
 ## Refactorings Similares
