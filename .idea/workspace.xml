@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="344e1bf3-359c-4094-91a8-30528336b7a6" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/RefactoringPattern/PullUpField.md" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/RefactoringPattern/SeperateQueryFromModifier.md" afterDir="false" />
+>>>>>>> 119-refactoring-simplifying-method-calls-seperate-query-from-modifier
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
