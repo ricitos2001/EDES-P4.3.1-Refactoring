@@ -52,7 +52,7 @@ necesarios. No olvides llamar a la implementación del constructor padre.
 reemplaza el constructor padre por el constructor de la subclase.
 
 4. Mueve los métodos y campos necesarios de la clase padre a la subclase. Hazlo a través de los métodos [Empujar Método 
-hacia Abajo](PushDownMethod.ms) y [Empujar Campo hacia Abajo](PushDownField.md). Es más fácil empezar moviendo los 
+hacia Abajo](PushDownMethod.md) y [Empujar Campo hacia Abajo](PushDownField.md). Es más fácil empezar moviendo los 
 métodos primero. De esta manera, los campos permanecen accesibles durante todo el proceso: desde la clase padre antes 
 del movimiento, y desde la subclase después de que se complete el movimiento.
 

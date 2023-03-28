@@ -87,7 +87,7 @@ estructura sea plana.
 
 ## Cómo Refactorizar
 
-Trate de eliminar los efectos secundarios del código - [Separar Consulta de Modificador](SeperateQueryFromModifier.md) 
+Trate de eliminar los efectos secundarios del código - [Separar Consulta de Modificador](SeperateQueryFromModifier.md)
 puede ser útil para este propósito. Esta solución será necesaria para la reorganización descrita a continuación.
 
 1. Aísle todas las cláusulas de guarda que llevan a llamar a una excepción o devolución inmediata de un valor del método 
