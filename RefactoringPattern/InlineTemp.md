@@ -15,8 +15,9 @@ fun hasDiscount(order: Order) : Boolean {
 }
 ```
 ## Por qué refactorizar
-Las variables locales en línea casi siempre se usan como parte de un reemplazo temporal con consulta o para allanar 
-el camino para el método de extracción.
+Las variables locales en línea casi siempre se usan como parte de 
+[Replace Temp with Query](https://refactoring.guru/replace-temp-with-query)
+o para allanar el camino para [Extract Method](https://refactoring.guru/extract-method).
 ## Beneficios
 Esta técnica de refactorización no ofrece casi ningún beneficio en sí misma. Sin embargo, si a la variable se le
 asigna el resultado de un método, puede mejorar marginalmente la legibilidad del programa al deshacerse de la variable
