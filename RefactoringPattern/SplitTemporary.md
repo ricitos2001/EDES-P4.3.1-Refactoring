@@ -17,7 +17,7 @@ println ( perímetro )
 Usa diferentes variables para diferentes valores. Cada variable debe ser responsable de una sola cosa en particular.
 
 ```Kotlin
-perímetro  final =  2  *  ( alto  +  ancho )
+perímetro =  2  *  ( alto  +  ancho )
 println ( perímetro )
 
 area = alto * ancho
