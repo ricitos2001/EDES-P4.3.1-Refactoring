@@ -6,19 +6,19 @@
 
 · Uso de constantes para codificar información (cómo USER_ADMIN_ROLE = 1 para referirse a usuarios con derechos de administrador).
 
-· Uso de constantes cadenas para usar como nombres de campos en matrices de datos.
+· Uso de constantes como nombres de campos en matrices de datos.
 
 ## Razones del Problema
  
-Al igual que la mayoría de los olores, las obsesiones primitivas nacen en momentos de debilidad. "¡Solo un campo para almacenar algunos datos!", dijo el programador. Crear un campo primitivo es mucho más fácil que crear una clase completamente nueva, ¿verdad? Y así se hizo. Luego se necesitó otro campo y se agregó de la misma manera. ¡He aquí que la clase se volvió enorme e inmanejable!
+Al igual que la mayoría de los olores, la obsesión por los tipos primitivos (Int, Long, Double, String, etc.) nacen en momentos de debilidad. "¡Solo un campo para almacenar un dato!", dijo el programador. Crear una variable de tipo primitivo es mucho más fácil que crear una clase completamente nueva, ¿verdad? Y así se hizo. Luego se necesitó otro campo y se agregó de la misma manera. ¡Al final tenemos una clase enorme e inmanejable!
 
-A menudo, los primitivos se usan para "simular" tipos. En lugar de tener un tipo de datos separado, tienes un conjunto de números o cadenas que forman la lista de valores permitidos para alguna entidad. Luego se les asignan nombres fáciles de entender a estos números y cadenas específicos mediante constantes, por eso se encuentran dispersos por todas partes.
+A menudo, los primitivos se usan para "simular" una clase. En lugar de tener un tipo de dato separado, tienes un conjunto de números o cadenas que forman la lista de valores permitidos para alguna entidad. Luego, mediante constantes, se les asignan nombres fáciles de entender a estos números y cadenas, por eso se encuentran dispersos por todas partes.
 
-Otro ejemplo de un mal uso de los primitivos es la simulación de campos. La clase contiene una gran variedad de datos y constantes de cadenas (que se especifican en la clase) se utilizan como índices de matriz para obtener estos datos.
+Otro ejemplo de un mal uso de los primitivos es la simulación de campos. La clase contiene una gran variedad de datos y constantes (declaradas en la clase) que se utilizan como índices de matriz para obtener estos datos: `matriz[NOMBRE]`, `matriz` almacena los datos y la constante `NOMBRE` indica el indice donde se almacena un dato.
 
 ## Tratamiento
 
-· Si tienes una gran variedad de campos primitivos, puede ser posible agrupar lógicamente algunos de ellos en su propia clase. Incluso mejor, mueve también el comportamiento asociado a estos datos dentro de la clase. Para esta tarea, intenta Reemplazar el Valor de Datos con un Objeto.
+· Si tienes una gran variedad de campos primitivos, puede ser posible agrupar lógicamente algunos de ellos en su propia clase. Incluso mejor, mueve también el comportamiento asociado a estos datos dentro de la clase. Para esta tarea, intenta reemplazar los datos con un Objeto.
 
 · Si los valores de los campos primitivos se utilizan en los parámetros de los métodos, utiliza Introduce Parameter Object o Preserve Whole Object.
 

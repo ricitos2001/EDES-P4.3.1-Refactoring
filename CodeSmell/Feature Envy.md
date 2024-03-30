@@ -30,5 +30,4 @@ para dividir el método en varias partes que se pueden colocar en diferentes lug
 ![](https://refactoring.guru/images/refactoring/content/smells/feature-envy-03.png)
 
 ## Cuándo ignorar
-A veces, el comportamiento se mantiene separado deliberadamente de la clase que contiene los datos. La ventaja habitual de esto es la capacidad de cambiar 
-dinámicamente el comportamiento.
+A veces, el comportamiento se mantiene separado deliberadamente de la clase que contiene los datos. La ventaja habitual de esto es la capacidad de cambiar dinámicamente el comportamiento.
