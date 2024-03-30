@@ -4,22 +4,24 @@
 
 Tienes una variable local que se usa para almacenar varios valores intermedios dentro de un método (excepto las variables de ciclo).
 
-```Kotlin (esta en java)
-temperatura  doble =  2  *  ( alto  +  ancho ) ;sistema _ fuera _ println ( temp ) ;
-temperatura = alto * ancho ; sistema _ fuera _ println ( temp ) ;
+```Kotlin
+perímetro =  2  *  ( alto  +  ancho )
+println ( perímetro )
 
-}
+perímetro = alto * ancho
+println ( perímetro )
 ```
 
 ## Solución
 
 Usa diferentes variables para diferentes valores. Cada variable debe ser responsable de una sola cosa en particular.
 
-```Kotlin (esta en java)
- doble  perímetro  final =  2  *  ( alto  +  ancho ) ;sistema _ fuera _ println ( perímetro ) ;
- área doble final = alto * ancho ; sistema _ fuera _ println ( área ) ;
+```Kotlin
+perímetro  final =  2  *  ( alto  +  ancho )
+println ( perímetro )
 
-}
+area = alto * ancho
+println ( area ) 
 ```
 
 ## Por qué refactorizar
