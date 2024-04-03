@@ -31,10 +31,10 @@ def basePrice():
 
 
 ## ¿Por qué Refactorizar?
-Esta refactorización puede sentar las bases para aplicar el [método de extracción](./ExtractMethod.md) para una parte de un método muy largo.<br>A veces, la misma expresión también se puede encontrar en otros métodos, lo cual es una razón para considerar la creación de un método común.
+Esta refactorización puede sentar las bases para aplicar el [método de extracción](./ExtractMethod.md) para una parte de un método muy largo.<br><br>A veces, la misma expresión también se puede encontrar en otros métodos, lo cual es una razón para considerar la creación de un método común.
 
 ## Beneficios
-Legibilidad del código. Es mucho más fácil entender el propósito del método que la línea .```getTax()orderPrice() * 0.2```<br>Simplifica el código a través de la deduplicación, si la línea que se reemplaza se utiliza en varios métodos.
+Legibilidad del código. Es mucho más fácil entender el propósito del método que la línea .```getTax()orderPrice() * 0.2```<br><br>Simplifica el código a través de la deduplicación, si la línea que se reemplaza se utiliza en varios métodos.
 
 ## Es bueno saberlo
 ### Rendimiento
