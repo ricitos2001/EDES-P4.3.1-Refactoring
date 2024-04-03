@@ -31,7 +31,6 @@ def basePrice():
 
 
 ## ¿Por qué Refactorizar?
-Esta refactorización puede sentar las bases para aplicar el [Extrac Method](https://github.com/IES-Rafael-Alberti/EDES-P4.3.1-Refactoring/blob/main/RefactoringPattern/ExtractMethod.md) para una parte de un método muy largo.
 Esta refactorización puede sentar las bases para aplicar el [método de extracción](./ExtractMethod.md) para una parte de un método muy largo.<br>A veces, la misma expresión también se puede encontrar en otros métodos, lo cual es una razón para considerar la creación de un método común.
 
 ## Beneficios
