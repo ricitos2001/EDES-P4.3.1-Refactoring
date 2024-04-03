@@ -37,7 +37,9 @@ Cuantas más líneas se encuentren en un método, más difícil será averiguar 
 ## Beneficios
 
 * Código más legible! Asegúrese de asignar al nuevo método un nombre que describa el propósito del método: `createOrder()`, `renderCustomerInfo()`, etc.
+
 * Menos duplicación de código. A menudo, el código que se encuentra en un método se puede reutilizar en otros lugares del programa. Por lo tanto, puede reemplazar duplicados con llamadas a su nuevo método.
+
 * Aísla partes independientes del código, lo que significa que los errores son menos probables (por ejemplo, si se modifica la variable incorrecta).
 
 ## Cómo refactorizar
