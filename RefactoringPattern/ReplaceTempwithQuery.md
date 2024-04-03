@@ -28,8 +28,6 @@ def basePrice():
 
 ```
 
-
-
 ## ¿Por qué Refactorizar?
 Esta refactorización puede sentar las bases para aplicar el [método de extracción](./ExtractMethod.md) para una parte de un método muy largo.<br><br>A veces, la misma expresión también se puede encontrar en otros métodos, lo cual es una razón para considerar la creación de un método común.
 
@@ -43,6 +41,6 @@ Esta refactorización puede plantear la cuestión de si este enfoque puede provo
 ## Cómo refactorizar
 1. Asegúrese de que se asigna un valor a la variable una vez y solo una vez dentro del método. Si no es así, utilice [Dividir variable temporal](./SplitTemporary.md) para asegurarse de que la variable se utilizará solo para almacenar el resultado de la expresión.
 
-2.Utilice el método de extracción para colocar la expresión de interés en un nuevo método. Asegúrese de que este método solo devuelve un valor y no cambia el estado del objeto. Si el método afecta al estado visible del objeto, utilice [Separar consulta del modificador](./SeparateQueryfromModifier.md).
+2. Utilice el método de extracción para colocar la expresión de interés en un nuevo método. Asegúrese de que este método solo devuelve un valor y no cambia el estado del objeto. Si el método afecta al estado visible del objeto, utilice [Separar consulta del modificador](./SeparateQueryfromModifier.md).
 
-3.   Reemplace la variable por una consulta al nuevo método.
+3. Reemplace la variable por una consulta al nuevo método.
