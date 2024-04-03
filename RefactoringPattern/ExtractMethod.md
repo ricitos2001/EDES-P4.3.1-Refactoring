@@ -46,7 +46,7 @@ Cuantas más líneas se encuentren en un método, más difícil será averiguar 
 
 1. Crea un nuevo método y nómbralo de una manera que haga que su propósito sea evidente.
 
-2. Copie el fragmento de código correspondiente en el nuevo método. Elimine el fragmento de su ubicación anterior y coloque una llamada para el nuevo método allí en su lugar.<br>Busque todas las variables utilizadas en este fragmento de código. Si se declaran dentro del fragmento y no se usan fuera de él, simplemente déjelos sin cambios: se convertirán en variables locales para el nuevo método.
+2. Copie el fragmento de código correspondiente en el nuevo método. Elimine el fragmento de su ubicación anterior y coloque una llamada para el nuevo método allí en su lugar.<br><br>Busque todas las variables utilizadas en este fragmento de código. Si se declaran dentro del fragmento y no se usan fuera de él, simplemente déjelos sin cambios: se convertirán en variables locales para el nuevo método.
 
 3. Si las variables se declaran antes del código que está extrayendo, deberá pasar estas variables a los parámetros del nuevo método para usar los valores contenidos anteriormente en ellas. A veces es más fácil deshacerse de estas variables recurriendo a [Reemplazar Temp por Query](./ReplaceTempwithQuery.md).
 
