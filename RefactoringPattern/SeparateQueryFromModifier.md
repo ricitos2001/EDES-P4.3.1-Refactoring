@@ -16,15 +16,11 @@ modificar el objeto.
 ## Por qué Refactorizar
 
 Esta técnica de refactorización implementa la Segregación de Responsabilidad de Comando y Consulta. Este principio nos
-dice que debemos separar el código responsable de obtener datos del código que cambia algo dentro de un objeto.
-
-El código para obtener datos se llama consulta. El código para cambiar cosas en el estado visible de un objeto se llama
+dice que debemos separar el código responsable de obtener datos del código que cambia algo dentro de un objeto.<br><br>El código para obtener datos se llama consulta. El código para cambiar cosas en el estado visible de un objeto se llama
 modificador. Cuando se combinan una consulta y un modificador, no hay forma de obtener datos sin hacer cambios en su
 condición. En otras palabras, haces una pregunta y puedes cambiar la respuesta incluso mientras la recibes. Este
 problema se vuelve aún más grave cuando la persona que llama a la consulta puede no saber acerca de los "efectos
-secundarios" del método, lo que a menudo lleva a errores en tiempo de ejecución.
-
-Pero recuerde que los efectos secundarios son peligrosos solo en el caso de los modificadores que cambian el estado
+secundarios" del método, lo que a menudo lleva a errores en tiempo de ejecución.<br><br>Pero recuerde que los efectos secundarios son peligrosos solo en el caso de los modificadores que cambian el estado
 visible de un objeto. Estos podrían ser, por ejemplo, campos accesibles desde la interfaz pública de un objeto, entradas
 en una base de datos, en archivos, etc. Si un modificador solo almacena en caché una operación compleja y la guarda
 dentro del campo privado de una clase, difícilmente puede causar efectos secundarios.
@@ -52,3 +48,5 @@ de datos, desea saber cuántas filas se eliminaron.
 4. Deshágase del código de devolución de valor en el método original, que ahora se ha convertido en un método
    modificador adecuado.
 
+## Ayuda a otras refactorizaciones
+[](./)
