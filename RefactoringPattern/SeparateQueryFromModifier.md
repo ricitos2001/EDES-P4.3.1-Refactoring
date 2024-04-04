@@ -49,4 +49,4 @@ de datos, desea saber cuántas filas se eliminaron.
    modificador adecuado.
 
 ## Ayuda a otras refactorizaciones
-[](./)
+[reemplazar variables temporales con consultas.](./ReplaceTempWithQuery.md)
