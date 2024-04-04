@@ -1,4 +1,4 @@
-# Reemplazar Temp por Query
+# Reemplazar variables temporales con consultas
 
 ## Problema
 El resultado de una expresión se coloca en una variable local para su uso posterior en el código.Colocas el resultado de una expresión en una variable local para su uso posterior en su código.
