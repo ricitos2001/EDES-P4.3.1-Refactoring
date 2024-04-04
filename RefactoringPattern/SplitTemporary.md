@@ -29,8 +29,11 @@ Si está escatimando en el número de variables dentro de una función y reutili
 ## Beneficios
 
 * Cada componente del código del programa debe ser responsable de una sola cosa. Esto hace que sea mucho más fácil mantener el código, ya que puede reemplazar fácilmente cualquier cosa en particular sin temor a efectos no deseados.
-* El código se vuelve más legible. Si una variable se creó hace mucho tiempo con prisas, probablemente tenga un nombre que no explique nada: , , , etc. Pero puede solucionar esta situación nombrando las nuevas variables de una manera comprensible y autoexplicativa. Tales nombres pueden parecerse a , , y similares.`k`,`a2`,`value`,`customerTaxValue`,`cityUnemploymentRate`,`clientSalutationString`
-* Esta técnica de refactorización es útil si preves utilizar el método de extracción más adelante.
+
+* El código se vuelve más legible. Si una variable se creó hace mucho tiempo con prisas, probablemente tenga un nombre que no explique nada: , , , etc. Pero puede solucionar esta situación nombrando las nuevas variables de una manera comprensible y autoexplicativa. Tales nombres pueden parecerse a , , y similares.`k`,`a2`,`value`,`customerTaxValue`,`cityUnemploymentRate`,`clientSalutationString`.
+
+* Esta técnica de refactorización es útil si preves utilizar el [método de extracción](./ExtractMethod.md) más adelante.
+
 
 ## Cómo refactorizar
 
