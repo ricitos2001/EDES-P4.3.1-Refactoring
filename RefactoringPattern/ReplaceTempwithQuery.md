@@ -3,29 +3,35 @@
 ## Problema
 El resultado de una expresión se coloca en una variable local para su uso posterior en el código.Colocas el resultado de una expresión en una variable local para su uso posterior en su código.
 
-``` Python
-def calculateTotal():
-    basePrice = quantity * itemPrice
-    if basePrice > 1000:
+``` Kotlin
+fun calculateTotal(): Double {
+    val basePrice = quantity * itemPrice
+    if (basePrice > 1000) {
         return basePrice * 0.95
-    else:
+    } else {
         return basePrice * 0.98
+    }
+}
 ```
 
 ## Solución
 Mueva toda la expresión a un método independiente y devuelva el resultado de ella. 
 Consulte el método en lugar de usar una variable. Incorpore el nuevo método en otros métodos, si es necesario.
 
-``` Python
-def calculateTotal():
-    if basePrice() > 1000:
+``` Kotlin
+// This code is written in Python
+
+fun calculateTotal(): Double {
+    if (basePrice() > 1000) {
         return basePrice() * 0.95
-    else:
+    } else {
         return basePrice() * 0.98
+    }
+}
 
-def basePrice():
+fun basePrice(): Double {
     return quantity * itemPrice
-
+}
 ```
 
 ## ¿Por qué Refactorizar?
