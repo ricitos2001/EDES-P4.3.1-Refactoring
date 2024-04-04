@@ -34,7 +34,6 @@ Si está escatimando en el número de variables dentro de una función y reutili
 
 * Esta técnica de refactorización es útil si preves utilizar el [método de extracción](./ExtractMethod.md) más adelante.
 
-
 ## Cómo refactorizar
 
 1. Encuentra el primer lugar en el código donde se da un valor a la variable. Aquí debe cambiar el nombre de la variable con un nombre que corresponda al valor que se le está asignando.
