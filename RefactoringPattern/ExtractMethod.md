@@ -6,11 +6,11 @@ Tiene un fragmento de código que se puede agrupar.
 
 ```Kotlin
 fun printOwing() {
-  printBanner();
+    printBanner()
 
-  // Print details.
-  println("name: " + name);
-  println("amount: " + getOutstanding());
+    // print details
+    println("name: $name")
+    println("amount: ${getOutstanding()}")
 }
 ```
 
@@ -20,13 +20,13 @@ Mueva este código a un nuevo método (o función) independiente y reemplace el 
 
 ```Kotlin
 fun printOwing() {
-  printBanner();
-  printDetails(getOutstanding());
+    printBanner()
+    printDetails(getOutstanding())
 }
 
-fun printDetails(outstanding:Double) {
-  println("name: " + name);
-  println("amount: " + outstanding);
+fun printDetails(outstanding: Int) {
+    println("name: $name")
+    println("amount: $outstanding")
 }
 ```
 
