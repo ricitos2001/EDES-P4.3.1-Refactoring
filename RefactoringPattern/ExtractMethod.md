@@ -48,6 +48,6 @@ Cuantas más líneas se encuentren en un método, más difícil será averiguar 
 
 2. Copie el fragmento de código correspondiente en el nuevo método. Elimine el fragmento de su ubicación anterior y coloque una llamada para el nuevo método allí en su lugar.<br><br>Busque todas las variables utilizadas en este fragmento de código. Si se declaran dentro del fragmento y no se usan fuera de él, simplemente déjelos sin cambios: se convertirán en variables locales para el nuevo método.
 
-3. Si las variables se declaran antes del código que está extrayendo, deberá pasar estas variables a los parámetros del nuevo método para usar los valores contenidos anteriormente en ellas. A veces es más fácil deshacerse de estas variables recurriendo a [reemplazar variables temporales con consultas](./ReplaceTempwithQuery.md).
+3. Si las variables se declaran antes del código que está extrayendo, deberá pasar estas variables a los parámetros del nuevo método para usar los valores contenidos anteriormente en ellas. A veces es más fácil deshacerse de estas variables recurriendo a [reemplazar variables temporales con consultas](./ReplaceTempWithQuery.md).
 
 4. Si ve que una variable local cambia en el código extraído de alguna manera, esto puede significar que este valor modificado será necesario más adelante en el método principal. ¡Compruébalo dos veces! Y si este es el caso, devuelve el valor de esta variable al método principal para que todo siga funcionando.
