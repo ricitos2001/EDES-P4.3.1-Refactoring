@@ -1,41 +1,40 @@
-# Dividir Temporalmente (Split Temporary)
+# Dividir variable temporal
 
 ## Problema
 
-Tienes una variable local que se usa para almacenar varios valores intermedios dentro de un método (excepto las variables de ciclo).
+Tiene una variable local que se usa para almacenar varios valores intermedios dentro de un método (excepto las variables de ciclo).
 
 ```Kotlin
-perímetro =  2  *  ( alto  +  ancho )
-println ( perímetro )
-
-perímetro = alto * ancho
-println ( perímetro )
+val temp = 2 * (height + width)
+println(temp)
+val temp = height * width
+println(temp)
 ```
 
 ## Solución
 
-Usa diferentes variables para diferentes valores. Cada variable debe ser responsable de una sola cosa en particular.
+Utilice diferentes variables para diferentes valores. Cada variable debe ser responsable de una sola cosa en particular.
 
 ```Kotlin
-perímetro =  2  *  ( alto  +  ancho )
-println ( perímetro )
+val height: Int = 5
+val width: Int = 10
 
-area = alto * ancho
-println ( area ) 
+val perimeter = 2 * (height + width)
+println(perimeter)
+
+val area = height * width
+println(area)
 ```
 
-## Por qué refactorizar
+## ¿Por qué Refactorizar?
 
-Si estas escatimando en la cantidad de variables dentro de una función y reutilizándolas para varios propósitos no relacionados, seguramente encontraras problemas tan rapido como necesites realizar cambios en el código que contiene las variables.
-Tendras que volver a comprobar cada caso de uso de variables para asegurarte de que se utilizan los valores correctos.
+Si está escatimando en el número de variables dentro de una función y reutilizándolas para varios propósitos no relacionados, seguramente encontrará problemas tan pronto como necesite realizar cambios en el código que contiene las variables. Tendrá que volver a comprobar cada caso de uso de variables para asegurarse de que se utilizan los valores correctos.
 
 ## Beneficios
 
-- Cada componente del código del programa debe ser responsable de una sola cosa. Esto hace que sea mucho más fácil mantener el código, ya que puedes reemplazar fácilmente cualquier cosa en particular sin temor a efectos no deseados.
-
-- El código se vuelve más legible. Si una variable se creó hace mucho tiempo con prisa, probablemente tenga un nombre que no explique nada: k, a2, value, etc. Pero puede solucionar esta situación nombrando las nuevas variables de una manera comprensible y autoexplicativa. Dichos nombres pueden parecerse a , customerTaxValuey similares.cityUnemploymentRateclientSalutationString
-
-- Esta técnica de refactorización es útil si preves utilizar el método de extracción más adelante.
+* Cada componente del código del programa debe ser responsable de una sola cosa. Esto hace que sea mucho más fácil mantener el código, ya que puede reemplazar fácilmente cualquier cosa en particular sin temor a efectos no deseados.
+* El código se vuelve más legible. Si una variable se creó hace mucho tiempo con prisas, probablemente tenga un nombre que no explique nada: , , , etc. Pero puede solucionar esta situación nombrando las nuevas variables de una manera comprensible y autoexplicativa. Tales nombres pueden parecerse a , , y similares.``k``a2``value``customerTaxValue``cityUnemploymentRate``clientSalutationString``
+* Esta técnica de refactorización es útil si preves utilizar el método de extracción más adelante.
 
 ## Cómo refactorizar
 
