@@ -5,9 +5,9 @@
 Tiene una variable local que se usa para almacenar varios valores intermedios dentro de un método (excepto las variables de ciclo).
 
 ```Kotlin
-val temp = 2 * (altura + longitud)
+val temp = 2 * (height + width)
 println(temp)
-val temp = altura * longitud
+val temp = height * width
 println(temp)
 ```
 
@@ -16,9 +16,9 @@ println(temp)
 Utilice diferentes variables para diferentes valores. Cada variable debe ser responsable de una sola cosa en particular.
 
 ``` Kotlin
-val perimetro = 2 * (altura + longitud)
-println(perimetro)
-val area = altura * longitud
+val perimeter = 2 * (height + width)
+println(perimeter)
+val area = height * width
 println(area)
 ```
 
@@ -36,6 +36,6 @@ Si está escatimando en el número de variables dentro de una función y reutili
 
 1. Encuentra el primer lugar en el código donde se da un valor a la variable. Aquí debe cambiar el nombre de la variable con un nombre que corresponda al valor que se le está asignando.
 
-2. Utiliza el nuevo nombre en lugar del antiguo en los lugares donde se utilice este valor de la variable.
+2. Utilice el nuevo nombre en lugar del antiguo en los lugares donde se utilice este valor de la variable.
 
-3. Repite según sea necesario para los lugares donde a la variable se le asigna un valor diferente.
+3. Repita el procedimiento según sea necesario para los lugares en los que se asigne un valor diferente a la variable.
