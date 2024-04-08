@@ -3,11 +3,10 @@
 ## Problema
 Utilizas acceso directo a campos privados dentro de una clase.
 
-``` Java
+```Kotlin
 class Range {
-  private int low, high;
-  boolean includes(int arg) {
-    return arg >= low && arg <= high;
+  fun includes(arg: Int): Boolean {
+    return arg >= low && arg <= high
   }
 }
 ```
@@ -15,37 +14,40 @@ class Range {
 ## Solución
 Crea un getter y un setter para el campo y utiliza solo estos métodos para acceder al campo.
 
-``` Java
+
+```Kotlin
 class Range {
-  private int low, high;
-  boolean includes(int arg) {
-    return arg >= getLow() && arg <= getHigh();
-  }
-  int getLow() {
-    return low;
-  }
-  int getHigh() {
-    return high;
-  }
+    fun includes(arg: Int): Boolean {
+        return arg >= low && arg <= high
+    }
+
+    fun getLow(): Int {
+        return low
+    }
+
+    fun getHigh(): Int {
+        return high
+    }
 }
 ```
 
-## Por qué Refactorizar
+
+## ¿Por qué Refactorizar?
 A veces, acceder directamente a un campo privado dentro de una clase no es lo suficientemente flexible. Quieres poder inicializar un valor de campo cuando se realiza la primera consulta o realizar ciertas operaciones en los nuevos valores del campo cuando se asignan, o tal vez hacer todo esto de varias formas en las subclases.
 
-## Beneficios
- - El acceso indirecto a los campos se refiere a cuando se actúa sobre un campo a través de métodos de acceso (getters y setters). Este enfoque es mucho más flexible que el acceso directo a los campos.
+## Beneficiós
+* El acceso indirecto a los campos es cuando se actúa sobre un campo a través de métodos de acceso (getters y setters). Este enfoque es mucho más flexible que el acceso directo a los campos.
 
-   - En primer lugar, puedes realizar operaciones complejas cuando se establece o se recibe datos en el campo. La inicialización diferida y la validación de los valores del campo se pueden implementar fácilmente dentro de los getters y setters del campo.
+** En primer lugar, puede realizar operaciones complejas cuando se establecen o reciben datos en el campo. La inicialización diferida y la validación de los valores de campo se implementan fácilmente dentro de los captadores y establecedores de campos.
 
-   - En segundo lugar, y más importante aún, puedes redefinir los getters y setters en las subclases.
+** En segundo lugar, y lo que es más importante, puede redefinir getters y setters en subclases.
 
- - Tienes la opción de no implementar un setter para un campo en absoluto. El valor del campo se especificará solo en el constructor, lo que hace que el campo sea inmutable durante toda la vida útil del objeto.
+* Tiene la opción de no implementar un establecedor para un campo en absoluto. El valor del campo se especificará solo en el constructor, lo que hará que el campo sea inalterable durante toda la vida útil del objeto.
 
-## Desventajas
-Cuando se utiliza el acceso directo a los campos, el código parece más simple y presentable, aunque la flexibilidad se ve disminuida.
+## Inconvenientes
+Cuando se utiliza el acceso directo a los campos, el código parece más sencillo y presentable, aunque la flexibilidad disminuye.
 
 ## Cómo Refactorizar
- 1. Crea un getter (y un setter opcional) para el campo. Estos deben ser protegidos o públicos.
+ 1. Cree un captador (y un establecedor opcional) para el campo. Deben ser o `protected` o `public`.
 
- 2. Encuentra todas las invocaciones directas del campo y reemplázalas por llamadas a los getters y setters.
+ 2. Busque todas las invocaciones directas del campo y reemplácelas por llamadas getter y setter.
