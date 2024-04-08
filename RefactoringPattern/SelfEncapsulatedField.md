@@ -1,7 +1,7 @@
 # Autoencapsular Campo
 
 ## Problema
-Utilizas acceso directo a campos privados dentro de una clase.
+El acceso directo a los campos privados dentro de una clase se utiliza.
 
 ```Kotlin
 class Range {
@@ -12,8 +12,7 @@ class Range {
 ```
 
 ## Solución
-Crea un getter y un setter para el campo y utiliza solo estos métodos para acceder al campo.
-
+Cree un captador o getter y un establecedor o setter para el campo y utilícelos solo para acceder al campo.
 
 ```Kotlin
 class Range {
